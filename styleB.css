@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 0;
+}
+
+.box {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 100px;
+  height: 150px;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #eeeff2;
+  border-left: 10px dotted #D0D0FF;
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: goldenrod;
+}
+
+.box:nth-child(6) {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
