@@ -1,38 +1,33 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
 
 body {
-  white-space: nowrap;
-  padding: 10px;
-  font-size: 0;
+  margin: 0;                     /* dış boşluk */
+  padding: 10px;          /* iç boşluk */        
+  white-space: nowrap;    /* bu satırı asla kırma */
+  font-size: 0;                 
 }
 
 .box {
-  display: inline-block;
+  display: inline-block;          
   vertical-align: top;
-  box-sizing: border-box;
+  box-sizing: border-box;      /* iç ve dış toplam boyu aynı olsun  */
   width: 100px;
   height: 150px;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 10px;                  
+  margin-right: 10px;             
   background-color: #eeeff2;
-  border-left: 10px dotted #D0D0FF;
-  font-family: Tahoma, sans-serif;
+  border-left: 10px dotted #D0D0FF; /* noktalı çizgi */
+  font-family: Tahoma, Arial, sans-serif;
   font-size: 40px;
 }
 
-.box:hover {
-  cursor: pointer;
+.box:hover { /*pseudo class */
+  cursor: pointer;               
   background-color: yellow;
   color: goldenrod;
 }
 
-.box:nth-child(6) {
-  position: fixed;
+#last {
+  position: fixed;  /*sayfa kaydırılsa yerinden oynamaz*/              
   right: 10px;
   bottom: 10px;
 }
